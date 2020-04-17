@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2020-04-17T09:30:43.382Z</updated>
+    <updated>2020-04-17T09:33:09.806Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -55,7 +55,7 @@
 <!-- more -->
 <p><a href="https://github.com/getgridea/gridea">Github</a><br>
 <a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
+<a href="https://yingyouyu.github.io/">示例网站</a></p>
 <h2 id="特性">特性👇</h2>
 <p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
 <p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>

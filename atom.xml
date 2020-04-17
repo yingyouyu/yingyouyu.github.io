@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2020-04-17T09:54:22.290Z</updated>
+    <updated>2020-04-17T10:12:24.183Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -10,6 +10,39 @@
     <logo>https://yingyouyu.github.io/images/avatar.png</logo>
     <icon>https://yingyouyu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sasuke的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[那些烦人的传奇广告，为何屡禁不止？]]></title>
+        <id>https://yingyouyu.github.io/post/na-xie-fan-ren-de-chuan-qi-guang-gao-wei-he-lu-jin-bu-zhi/</id>
+        <link href="https://yingyouyu.github.io/post/na-xie-fan-ren-de-chuan-qi-guang-gao-wei-he-lu-jin-bu-zhi/">
+        </link>
+        <updated>2020-04-17T09:55:58.000Z</updated>
+        <content type="html"><![CDATA[<p>该文章为一篇杂谈，关于那些烦人的广告而生。</p>
+<h1 id="从头来探究传奇">从头来探究传奇</h1>
+<p>传奇这种游戏你懂得，说什么**“新手村送神装”<strong>，</strong>“一刀999，打不赢boss算我输”**，甚至还有明星代言（成龙啊，***明星啊等等等等）<br>
+但是，传奇这种游戏为什么遍地开花，而人家网易精心做的《重装上阵》为什么只有一个服务器？（世界未解之谜）</p>
+<h2 id="传奇这类游戏为什么会这么多">传奇这类游戏为什么会这么多</h2>
+<p>无良商家多，为了赚钱而编写传奇类网游、手游、端游……<br>
+而且这游戏，骗氪！腾讯不敢做的事情，他敢做！<br>
+（腾讯都没这么骗氪啊喂）<br>
+传奇，沦为了不氪金不能变强的游戏。</p>
+<h2 id="玩传奇的都是什么人">玩传奇的都是什么人</h2>
+<p>搞不好都是那些无良商家的托，人家在同样时间内，立刻十转999级，而你呢，新手村还没打完……</p>
+<h1 id="如果你的手机电脑上有传奇">如果你的手机/电脑上有传奇</h1>
+<p>立刻卸载，立刻！立刻！</p>
+<h2 id="关于为什么要立刻卸载传奇我有话要说">关于“为什么要立刻卸载传奇”，我有话要说</h2>
+<p>玩传奇，还不如有时间写写代码，愉悦愉悦身心，去做点你想做的事。<br>
+接下来才是为什么卸载传奇的真正原因。</p>
+<h3 id="1占内存">1.占内存</h3>
+<p>我说的是大实话，这点手机/电脑内存还不如存点资料</p>
+<h3 id="2玩法单一">2.玩法单一</h3>
+<p>传奇只有升级变强这条路，但你看看隔壁网易的《重装上阵》，可以开自己的机甲和别人战斗，造赛车和别人在赛道上竞速，造高达以完成儿时梦想……传奇他做得到吗？！</p>
+<h2 id="so">so</h2>
+<p>你肯定了解为什么要卸载传奇了。</p>
+<h1 id="如何抵制传奇">如何抵制传奇</h1>
+<p>看到广告立刻删除广告，如果游戏内要你看广告的话，看完，死也别下载。<br>
+如果是百度网上看到，直接屏蔽，或者用高超的F12技能让他不出现在你的眼前。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[当你的程序不通过时]]></title>
         <id>https://yingyouyu.github.io/post/dang-ni-de-cheng-xu-bu-tong-guo-shi/</id>

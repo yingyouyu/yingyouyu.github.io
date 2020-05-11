@@ -1,58 +1,140 @@
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>Sasuke的小窝</title>
-<link rel="shortcut icon" href="https://yingyouyu.github.io/favicon.ico?v=1589195687280">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="たくさんの絆があって、自分だけを迷わせます。強い思いと大切な思いは、自分を弱くさせるだけです。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://yingyouyu.github.io/favicon.ico?v=1589195734779">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://yingyouyu.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Sasuke的小窝 - Atom Feed" href="https://yingyouyu.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="たくさんの絆があって、自分だけを迷わせます。強い思いと大切な思いは、自分を弱くさせるだけです。" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://yingyouyu.github.io">
-  <img class="avatar" src="https://yingyouyu.github.io/images/avatar.png?v=1589195687280" alt="">
-  </a>
-  <h1 class="site-title">
-    Sasuke的小窝
-  </h1>
-  <p class="site-description">
-    たくさんの絆があって、自分だけを迷わせます。強い思いと大切な思いは、自分を弱くさせるだけです。
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://yingyouyu.github.io">
+        <img class="avatar" src="https://yingyouyu.github.io/images/avatar.png?v=1589195734779" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://yingyouyu.github.io">
+        <h1 class="site-title">Sasuke的小窝</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+        <div class="content-container">
+          
+          
+
+<div class="archives-container">
+  
+    <h2 class="year">2020</h2>
+    
+      
+        <article class="post">
+          <a href="https://yingyouyu.github.io/post/wei-shi-me-cyong-yuan-gan-bu-guo-python/">
+            <h2 class="post-title">
+              为什么C++永远比不过Python
+              <small>2020-05-04</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://yingyouyu.github.io/post/meng-xin-bi-xue-zhe-15-zu-win10-kuai-jie-jian-bu-dong-jiu-yu-da-liao/">
+            <h2 class="post-title">
+              萌新必学！这15组Win10快捷键不懂就亏大了
+              <small>2020-04-20</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://yingyouyu.github.io/post/na-xie-fan-ren-de-chuan-qi-guang-gao-wei-he-lu-jin-bu-zhi/">
+            <h2 class="post-title">
+              那些烦人的传奇广告，为何屡禁不止？
+              <small>2020-04-17</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://yingyouyu.github.io/post/dang-ni-de-cheng-xu-bu-tong-guo-shi/">
+            <h2 class="post-title">
+              当你的程序不通过时
+              <small>2020-04-16</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+  
+</div>
+
+
+        </div>
+
+        <div class="site-footer">
+  <div class="slogan">たくさんの絆があって、自分だけを迷わせます。強い思いと大切な思いは、自分を弱くさせるだけです。</div>
   <div class="social-container">
     
       
@@ -66,69 +148,27 @@
       
     
   </div>
+  小窝简易，不喜勿喷。 | <a class="rss" href="https://yingyouyu.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-    
-        
-
-<div class="archives-container">
-  
-    <h2 class="year">2020</h2>
-    
-      
-        <a href="https://yingyouyu.github.io/post/wei-shi-me-cyong-yuan-gan-bu-guo-python/" class="post">
-          <h2 class="post-title">
-            为什么C++永远比不过Python
-          </h2>
-          <div class="time">2020-05-04</div>
-        </a>
-      
-    
-      
-        <a href="https://yingyouyu.github.io/post/meng-xin-bi-xue-zhe-15-zu-win10-kuai-jie-jian-bu-dong-jiu-yu-da-liao/" class="post">
-          <h2 class="post-title">
-            萌新必学！这15组Win10快捷键不懂就亏大了
-          </h2>
-          <div class="time">2020-04-20</div>
-        </a>
-      
-    
-      
-        <a href="https://yingyouyu.github.io/post/na-xie-fan-ren-de-chuan-qi-guang-gao-wei-he-lu-jin-bu-zhi/" class="post">
-          <h2 class="post-title">
-            那些烦人的传奇广告，为何屡禁不止？
-          </h2>
-          <div class="time">2020-04-17</div>
-        </a>
-      
-    
-      
-        <a href="https://yingyouyu.github.io/post/dang-ni-de-cheng-xu-bu-tong-guo-shi/" class="post">
-          <h2 class="post-title">
-            当你的程序不通过时
-          </h2>
-          <div class="time">2020-04-16</div>
-        </a>
-      
-    
-  
-</div>
-
-    
-        <div class="pagination-container">
-  
-  
-</div>
-
-    
-        <div class="site-footer">
-  小窝简易，不喜勿喷。
-  <a class="rss" href="https://yingyouyu.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
 
       </div>
+      <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
     </div>
   </body>
 </html>

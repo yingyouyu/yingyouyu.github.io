@@ -1,97 +1,98 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>那些烦人的传奇广告，为何屡禁不止？ | Sasuke的小窝</title>
-<link rel="shortcut icon" href="https://yingyouyu.github.io/favicon.ico?v=1589195687280">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="たくさんの絆があって、自分だけを迷わせます。強い思いと大切な思いは、自分を弱くさせるだけです。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://yingyouyu.github.io/favicon.ico?v=1589195734779">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://yingyouyu.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="那些烦人的传奇广告，为何屡禁不止？ | Sasuke的小窝 - Atom Feed" href="https://yingyouyu.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="该文章为一篇杂谈，关于那些烦人的广告而生。
-从头来探究传奇
-传奇这种游戏你懂得，说什么“新手村送神装”，“一刀999，打不赢boss算我输”，甚至还有明星代言（成龙啊，xxx明星啊等等等等）
-但是，传奇这种游戏为什么遍地开花，而人家网易精心..." />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://yingyouyu.github.io">
-  <img class="avatar" src="https://yingyouyu.github.io/images/avatar.png?v=1589195687280" alt="">
-  </a>
-  <h1 class="site-title">
-    Sasuke的小窝
-  </h1>
-  <p class="site-description">
-    たくさんの絆があって、自分だけを迷わせます。強い思いと大切な思いは、自分を弱くさせるだけです。
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://yingyouyu.github.io">
+        <img class="avatar" src="https://yingyouyu.github.io/images/avatar.png?v=1589195734779" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://yingyouyu.github.io">
+        <h1 class="site-title">Sasuke的小窝</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              那些烦人的传奇广告，为何屡禁不止？
-            </h2>
-            <div class="post-info">
-              <span>
-                2020-04-17
-              </span>
-              <span>
-                2 min read
-              </span>
-              
-            </div>
+          
+          <h2 class="post-title">那些烦人的传奇广告，为何屡禁不止？</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-04-17</span>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>该文章为一篇杂谈，关于那些烦人的广告而生。</p>
+          </div>
+          <div class="post-content">
+            <p>该文章为一篇杂谈，关于那些烦人的广告而生。</p>
 <h1 id="从头来探究传奇">从头来探究传奇</h1>
 <p>传奇这种游戏你懂得，说什么“新手村送神装”，“一刀999，打不赢boss算我输”，甚至还有明星代言（成龙啊，xxx明星啊等等等等）<br>
 但是，传奇这种游戏为什么遍地开花，而人家网易精心做的《重装上阵》为什么只有一个服务器？（世界未解之谜）</p>
@@ -119,126 +120,86 @@
 <h2 id="但是那些传奇广告为啥屡禁不止">但是那些传奇广告为啥屡禁不止</h2>
 <p>太流氓，一个被禁再写一个再发，贼流氓。</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#%E4%BB%8E%E5%A4%B4%E6%9D%A5%E6%8E%A2%E7%A9%B6%E4%BC%A0%E5%A5%87">从头来探究传奇</a>
-<ul>
-<li><a href="#%E4%BC%A0%E5%A5%87%E8%BF%99%E7%B1%BB%E6%B8%B8%E6%88%8F%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E8%BF%99%E4%B9%88%E5%A4%9A">传奇这类游戏为什么会这么多</a></li>
-<li><a href="#%E7%8E%A9%E4%BC%A0%E5%A5%87%E7%9A%84%E9%83%BD%E6%98%AF%E4%BB%80%E4%B9%88%E4%BA%BA">玩传奇的都是什么人</a></li>
-</ul>
-</li>
-<li><a href="#%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84%E6%89%8B%E6%9C%BA%E7%94%B5%E8%84%91%E4%B8%8A%E6%9C%89%E4%BC%A0%E5%A5%87">如果你的手机/电脑上有传奇</a>
-<ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%AB%8B%E5%88%BB%E5%8D%B8%E8%BD%BD%E4%BC%A0%E5%A5%87%E6%88%91%E6%9C%89%E8%AF%9D%E8%A6%81%E8%AF%B4">关于“为什么要立刻卸载传奇”，我有话要说</a>
-<ul>
-<li><a href="#1%E5%8D%A0%E5%86%85%E5%AD%98">1.占内存</a></li>
-<li><a href="#2%E7%8E%A9%E6%B3%95%E5%8D%95%E4%B8%80">2.玩法单一</a></li>
-</ul>
-</li>
-<li><a href="#so">so</a></li>
-</ul>
-</li>
-<li><a href="#%E5%A6%82%E4%BD%95%E6%8A%B5%E5%88%B6%E4%BC%A0%E5%A5%87">如何抵制传奇</a>
-<ul>
-<li><a href="#%E4%BD%86%E6%98%AF%E9%82%A3%E4%BA%9B%E4%BC%A0%E5%A5%87%E5%B9%BF%E5%91%8A%E4%B8%BA%E5%95%A5%E5%B1%A1%E7%A6%81%E4%B8%8D%E6%AD%A2">但是那些传奇广告为啥屡禁不止</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
           <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://yingyouyu.github.io/post/dang-ni-de-cheng-xu-bu-tong-guo-shi/">
+            <a class="purple-link" href="https://yingyouyu.github.io/post/dang-ni-de-cheng-xu-bu-tong-guo-shi/">
               <h3 class="post-title">
-                当你的程序不通过时
+                下一篇：当你的程序不通过时
               </h3>
             </a>
           </div>
-        
-
-        
           
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      </div>
 
-<div id="gitalk-container"></div>
+      
+        
+          <div id="gitalk-container"></div>
+        
 
-<script>
+        
+      
 
-  var gitalk = new Gitalk({
-    clientID: '',
-    clientSecret: '',
-    repo: '',
-    owner: '',
-    admin: [''],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
+      <div class="site-footer">
+  <div class="slogan">たくさんの絆があって、自分だけを迷わせます。強い思いと大切な思いは、自分を弱くさせるだけです。</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  小窝简易，不喜勿喷。 | <a class="rss" href="https://yingyouyu.github.io/atom.xml" target="_blank">RSS</a>
+</div>
 
-  gitalk.render('gitalk-container')
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-          
 
-          
-        
 
-        <div class="site-footer">
-  小窝简易，不喜勿喷。
-  <a class="rss" href="https://yingyouyu.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
-    </div>
-
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
-
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
-
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
+      gitalk.render('gitalk-container')
 
     </script>
+  
+
+  
+
+
+
+
   </body>
 </html>

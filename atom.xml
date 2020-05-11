@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2020-04-20T11:45:31.443Z</updated>
+    <updated>2020-05-11T11:14:51.961Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -10,6 +10,201 @@
     <logo>https://yingyouyu.github.io/images/avatar.png</logo>
     <icon>https://yingyouyu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sasuke的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[为什么C++永远比不过Python]]></title>
+        <id>https://yingyouyu.github.io/post/wei-shi-me-cyong-yuan-gan-bu-guo-python/</id>
+        <link href="https://yingyouyu.github.io/post/wei-shi-me-cyong-yuan-gan-bu-guo-python/">
+        </link>
+        <updated>2020-05-04T12:12:01.000Z</updated>
+        <content type="html"><![CDATA[<p>本文从客观角度出发，用较为【数据删除】的说法来说明。</p>
+<h1 id="1代码结构">1.代码结构</h1>
+<h2 id="11-代码非主体部分">1|1 代码非主体部分</h2>
+<p>以高精加为例<br>
+C++：</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+#include&lt;cstring&gt;
+using namespace std;
+char a1[100],b1[100];
+int a[100],b[100],c[100],lena,lenb,lenc,i,x;
+int main(){
+    memset(a,0,sizeof(a));
+  	memset(b,0,sizeof(b));
+  	memset(c,0,sizeof(c));
+  	gets(a1);
+ 	gets(b1);                                                     	//输入加数与被加数
+  	lena=strlen(a1);
+  	lenb=strlen(b1);
+  	for (i=0;i&lt;=lena-1;i++) a[lena-i]=a1[i]-48;    	//加数放入a数组
+　 for (i=0;i&lt;=lenb-1;i++) b[lenb-i]=b1[i]-48;               //加数放入b数组
+  	lenc =1;
+  	x=0;
+    while (lenc &lt;=lena||lenc &lt;=lenb){
+        c[lenc]=a[lenc]+b[lenc]+x;     //两数相加
+	　 x=c[lenc]/10;
+	　c[lenc]%=10;
+		lenc++;
+    }
+    c[lenc]=x; 
+	if (c[lenc]==0)
+		lenc--;                                    //处理最高进位
+	for (i=lenc;i&gt;=1;i--) 
+	cout&lt;&lt;c[i];                                     //输出结果
+	cout&lt;&lt;endl;
+	return 0;
+}
+</code></pre>
+<p>Python：</p>
+<pre><code class="language-python">from functools import reduce#导入reduce用于将整数列表中的内容转换为字符串
+def add(a, b):
+    if len(a) &gt; len(b):#将输入的数字左端补齐为同样的长度
+        b = b.zfill(len(a) - len(b) + 1)
+    else:
+        a = a.zfill(len(b) - len(a) + 1)
+    #(&quot;0&quot; + str(a))前面加&quot;0&quot;的原因是防止最高位进位是超过列表的容量限制
+    #比如说9+9会向前面进一位,如果没有添加额外的0的话进位1就没地方存储
+    a = list(map(lambda x : int(x), (&quot;0&quot; + str(a)).strip()))
+    b = list(map(lambda x : int(x), (&quot;0&quot; + str(b)).strip()))
+
+    for i in range(len(a) - 1, 0, -1):
+        temp = a[i] + b[i];
+        a[i - 1] += temp // 10
+        a[i] = temp % 10
+    return int(reduce(lambda x, y : str(x) + str(y), a))#转换为字符串
+
+a, b = input(&quot;input a: &quot;), input(&quot;input b: &quot;)
+print(add(a, b))
+</code></pre>
+<p>搞错了，Python是下面一个：</p>
+<pre><code class="language-python">print(int(input())+int(input()))
+</code></pre>
+<p>我：服了服了<br>
+没想到Python如此的简单（滑稽）<br>
+首先先看一下C++的非代码主体部分（头文件+变量定义）：</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+#include&lt;cstring&gt;
+using namespace std;
+char a1[100],b1[100];
+int a[100],b[100],c[100],lena,lenb,lenc,i,x;
+</code></pre>
+<p>but！<br>
+Python并没有这些东西！</p>
+<h2 id="12-代码主体结构">1|2 代码主体结构</h2>
+<p>此处的主体结构指C++的<code>main()</code>函数和别的函数和Python的非定义变量语句。<br>
+C++：</p>
+<pre><code class="language-cpp">int main(){
+    memset(a,0,sizeof(a));
+  	memset(b,0,sizeof(b));
+  	memset(c,0,sizeof(c));
+  	gets(a1);
+ 	gets(b1);                                                     	//输入加数与被加数
+  	lena=strlen(a1);
+  	lenb=strlen(b1);
+  	for (i=0;i&lt;=lena-1;i++) a[lena-i]=a1[i]-48;    	//加数放入a数组
+　 for (i=0;i&lt;=lenb-1;i++) b[lenb-i]=b1[i]-48;               //加数放入b数组
+  	lenc =1;
+  	x=0;
+    while (lenc &lt;=lena||lenc &lt;=lenb){
+        c[lenc]=a[lenc]+b[lenc]+x;     //两数相加
+	　 x=c[lenc]/10;
+	　c[lenc]%=10;
+		lenc++;
+    }
+    c[lenc]=x; 
+	if (c[lenc]==0)
+		lenc--;                                    //处理最高进位
+	for (i=lenc;i&gt;=1;i--) 
+	cout&lt;&lt;c[i];                                     //输出结果
+	cout&lt;&lt;endl;
+	return 0;
+}
+</code></pre>
+<p>但是！<br>
+Python就那么一句话！</p>
+<pre><code class="language-python">print(int(input())+int(input()))
+</code></pre>
+<p>大惊。<br>
+#2.输出语句的差异<br>
+首先看一下<a href="https://www.luogu.com.cn/problem/P1000">某谷经典题目</a><br>
+这题当年坑死我也（输出这么大一张字符画，复制都累死了）<br>
+C++正解：</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+using namespace std;
+int main()
+{
+	cout&lt;&lt;&quot;                ********&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;               ************&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;               ####....#.&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;             #..###.....##....&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;             ###.......######              ###            ###&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;                ...........               #...#          #...#&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;               ##*#######                 #.#.#          #.#.#&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;            ####*******######             #.#.#          #.#.#&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;           ...#***.****.*###....          #...#          #...#&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;           ....**********##.....           ###            ###&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;           ....****    *****....&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;             ####        ####&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;          ######        ######&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;##############################################################&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;#...#......#.##...#......#.##...#......#.##------------------#&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;###########################################------------------#&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;#..#....#....##..#....#....##..#....#....#####################&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;##########################################    #----------#&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;#.....#......##.....#......##.....#......#    #----------#&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;##########################################    #----------#&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#&quot;&lt;&lt;endl;
+	cout&lt;&lt;&quot;##########################################    ############&quot;&lt;&lt;endl;
+	return 0;
+}
+</code></pre>
+<p>但是，但是……<br>
+Python居然可以写成这样：</p>
+<pre><code class="language-python">print('''                ********
+               ************
+               ####....#.
+             #..###.....##....
+             ###.......######              ###            ###
+                ...........               #...#          #...#
+               ##*#######                 #.#.#          #.#.#
+            ####*******######             #.#.#          #.#.#
+           ...#***.****.*###....          #...#          #...#
+           ....**********##.....           ###            ###
+           ....****    *****....
+             ####        ####
+           ######        ######
+##############################################################
+#...#......#.##...#......#.##...#......#.##------------------#
+###########################################------------------#
+#..#....#....##..#....#....##..#....#....#####################
+##########################################    #----------#
+#.....#......##.....#......##.....#......#    #----------#
+##########################################    #----------#
+#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#
+##########################################    ############''')
+</code></pre>
+<p>多行字符串就是好啊<br>
+（但是山外有山，PHP更方便）<br>
+but<br>
+C也可以写多行字符串……</p>
+<h1 id="3是否需要编译">3.是否需要编译</h1>
+<p>C++是典型的要编译的语言，但是Python并不需要编译，直接解释运行……<br>
+Python：C++他就是个屑啦<br>
+C++：Python你欺人太甚</p>
+<h1 id="总结">总结</h1>
+<p>所以Python才会强到全员都学<br>
+所以Python才会被CCF给ban掉<br>
+所以……</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+using namespace std;
+int main(){
+    cout&lt;&lt;&quot;C++永垂不朽！&quot;&lt;&lt;endl;
+    return 0;
+}
+</code></pre>
+<p>（手动滑稽）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[萌新必学！这15组Win10快捷键不懂就亏大了]]></title>
         <id>https://yingyouyu.github.io/post/meng-xin-bi-xue-zhe-15-zu-win10-kuai-jie-jian-bu-dong-jiu-yu-da-liao/</id>

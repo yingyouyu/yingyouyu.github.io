@@ -1,13 +1,26 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>为什么C++永远比不过Python | Sasuke的小窝</title>
-<link rel="shortcut icon" href="https://yingyouyu.github.io/favicon.ico?v=1589541470212">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://yingyouyu.github.io/favicon.ico?v=1589621284680">
 <link rel="stylesheet" href="https://yingyouyu.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="为什么C++永远比不过Python | Sasuke的小窝 - Atom Feed" href="https://yingyouyu.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
@@ -20,76 +33,75 @@ C++：
 #include&lt;cstdio&gt;
 #include&lt;cs..." />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://yingyouyu.github.io">
-  <img class="avatar" src="https://yingyouyu.github.io/images/avatar.png?v=1589541470212" alt="">
-  </a>
-  <h1 class="site-title">
-    Sasuke的小窝
-  </h1>
-  <p class="site-description">
-    たくさんの絆があって、自分だけを迷わせます。強い思いと大切な思いは、自分を弱くさせるだけです。
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://yingyouyu.github.io">
+        <img src="https://yingyouyu.github.io/images/avatar.png?v=1589621284680" class="site-logo">
+        <h1 class="site-title">Sasuke的小窝</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      たくさんの絆があって、自分だけを迷わせます。強い思いと大切な思いは、自分を弱くさせるだけです。
+    </div>
+    <div class="site-footer">
+      小窝简易，不喜勿喷。 | <a class="rss" href="https://yingyouyu.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              为什么C++永远比不过Python
-            </h2>
-            <div class="post-info">
-              <span>
-                2020-05-04
-              </span>
-              <span>
-                6 min read
-              </span>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">为什么C++永远比不过Python</h2>
+            <div class="post-date">2020-05-04</div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>本文从客观角度出发，用较为【数据删除】的说法来说明。</p>
+            <div class="post-content" v-pre>
+              <p>本文从客观角度出发，用较为【数据删除】的说法来说明。</p>
 <h1 id="1代码结构">1.代码结构</h1>
 <h2 id="11-代码非主体部分">1|1 代码非主体部分</h2>
 <p>以高精加为例<br>
@@ -277,112 +289,74 @@ int main(){
 </code></pre>
 <p>（手动滑稽）</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#1%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84">1.代码结构</a>
-<ul>
-<li><a href="#11-%E4%BB%A3%E7%A0%81%E9%9D%9E%E4%B8%BB%E4%BD%93%E9%83%A8%E5%88%86">1|1 代码非主体部分</a></li>
-<li><a href="#12-%E4%BB%A3%E7%A0%81%E4%B8%BB%E4%BD%93%E7%BB%93%E6%9E%84">1|2 代码主体结构</a></li>
-</ul>
-</li>
-<li><a href="#3%E6%98%AF%E5%90%A6%E9%9C%80%E8%A6%81%E7%BC%96%E8%AF%91">3.是否需要编译</a></li>
-<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
-</ul>
-
-              </div>
             </div>
-          </article>
-        </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://yingyouyu.github.io/post/meng-xin-bi-xue-zhe-15-zu-win10-kuai-jie-jian-bu-dong-jiu-yu-da-liao/">
+                  <h3 class="post-title">
+                    萌新必学！这15组Win10快捷键不懂就亏大了
+                  </h3>
+                </a>
+              </div>
+            
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://yingyouyu.github.io/post/meng-xin-bi-xue-zhe-15-zu-win10-kuai-jie-jian-bu-dong-jiu-yu-da-liao/">
-              <h3 class="post-title">
-                萌新必学！这15组Win10快捷键不懂就亏大了
-              </h3>
-            </a>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
-        
 
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '',
-    clientSecret: '',
-    repo: '',
-    owner: '',
-    admin: [''],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-        <div class="site-footer">
-  小窝简易，不喜勿喷。
-  <a class="rss" href="https://yingyouyu.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
+        </div>
       </div>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
-
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
-
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
+      gitalk.render('gitalk-container')
 
     </script>
+  
+
+  
+
+
+
+
   </body>
 </html>

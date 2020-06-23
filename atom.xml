@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2020-06-23T08:52:00.160Z</updated>
+    <updated>2020-06-23T08:55:39.960Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -228,9 +228,9 @@ C++：</p>
 Python就那么一句话！</p>
 <pre><code class="language-python">print(int(input())+int(input()))
 </code></pre>
-<p>大惊。<br>
-#2.输出语句的差异<br>
-首先看一下<a href="https://www.luogu.com.cn/problem/P1000">某谷经典题目</a><br>
+<p>大惊。</p>
+<h1 id="2输出语句的差异">2.输出语句的差异</h1>
+<p>首先看一下<a href="https://www.luogu.com.cn/problem/P1000">某谷经典题目</a><br>
 这题当年坑死我也（输出这么大一张字符画，复制都累死了）<br>
 C++正解：</p>
 <pre><code class="language-cpp">#include&lt;iostream&gt;

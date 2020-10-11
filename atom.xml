@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2020-09-13T10:51:17.528Z</updated>
+    <updated>2020-10-11T09:00:52.476Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -10,6 +10,49 @@
     <logo>https://yingyouyu.github.io/images/avatar.png</logo>
     <icon>https://yingyouyu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sasuke的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[2020鄞州区科技节编程比赛初赛游记]]></title>
+        <id>https://yingyouyu.github.io/post/uZpy6J2A_/</id>
+        <link href="https://yingyouyu.github.io/post/uZpy6J2A_/">
+        </link>
+        <updated>2020-10-05T08:01:08.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="20209-初赛前">2020/9 初赛前</h1>
+<p>我：cnm历年NOIP（包括2019CSP）的题咋这么难<br>
+NOIP真题：你太蒻了<br>
+我：cao区赛真题呢？网上TM居然没有！<br>
+于是赛前只能刷刷历年真题，复习复习数据结构</p>
+<h1 id="2020929">2020/9/29</h1>
+<p>我：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∗</mo><mo>∗</mo><mo>∗</mo></mrow><annotation encoding="application/x-tex">***</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.46528em;vertical-align:0em;"></span><span class="mord">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.46528em;vertical-align:0em;"></span><span class="mord">∗</span></span></span></span>为什么我要参加！<br>
+<strong>我 要 没 了</strong></p>
+<center><font face="楷体" color=red size=7>危</font></center>
+# 2020/9/30 12:31
+我：为毛我们打车，别人都是大巴送（和我哥一样的全是怨气）
+幸亏我哥和我坐一车
+# 2020/9/30 13:03
+阿巴阿巴阿巴（看到题目傻了）
+```
+- 集合：并（∪）、交（∩）、属于（∈）……
+- 公式：求和（∑）、求积（∏）……
+- 阅读程序：模拟、递归、字符串……
+- 程序填空：dp、位运算、八皇后（误，是N皇后）……
+```
+递归暴力模拟（才怪，我没模拟）
+模拟题写草稿纸上，结果发现蒙圈了
+公式不会读（doge）
+集合靠瞎算……
+我太难了
+我太蒻了（真·蒟蒻）
+> 除了浙江都是蒻省
+> 某著名OIer
+# 2020/9/30 15:33
+![](https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=44933989,909463231&fm=26&gp=0.jpg)
+这就是从考场出来的我……
+# 2020/9/30 16:27
+和我哥同坐一辆出租回学校
+MMP，趁我不在考试还默数学公式（幸亏老师给我免了）
+但是！看看这桌上的作业吧，大概有 $1024^1024$ 本……
+![](https://yingyouyu.github.io/post-images/1601889805901.jpg)（指我心中的痛）]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[真·明明不是JOJO结果DIO挨刀的梗]]></title>
         <id>https://yingyouyu.github.io/post/2rJpep2nG/</id>
@@ -573,7 +616,7 @@ Win+K是Win10里的连接器，可以连接蓝牙音响、蓝牙鼠标、无线�
         <content type="html"><![CDATA[<p>该文章为一篇杂谈，关于那些烦人的广告而生。</p>
 <h1 id="从头来探究传奇">从头来探究传奇</h1>
 <p>传奇这种游戏你懂得，说什么“新手村送神装”，“一刀999，打不赢boss算我输”，甚至还有明星代言（成龙啊，xxx明星啊等等等等）<br>
-但是，传奇这种游戏为什么遍地开花，而人家网易精心做的《重装上阵》为什么只有一个服务器？（世界未解之谜）</p>
+但是，传奇这种游戏为什么遍地开花，而人家网易精心做的《重装上阵》为什么只有一个服务器？（世界未解之谜）P.S：7月30日重装上阵日服开服</p>
 <h2 id="传奇这类游戏为什么会这么多">传奇这类游戏为什么会这么多</h2>
 <p>无良商家多，为了赚钱而编写传奇类网游、手游、端游……<br>
 而且这游戏，骗氪！腾讯不敢做的事情，他敢做！<br>
@@ -597,37 +640,6 @@ Win+K是Win10里的连接器，可以连接蓝牙音响、蓝牙鼠标、无线�
 如果是百度网上看到，直接屏蔽，或者用高超的F12技能让他不出现在你的眼前。</p>
 <h2 id="但是那些传奇广告为啥屡禁不止">但是那些传奇广告为啥屡禁不止</h2>
 <p>太流氓，一个被禁再写一个再发，贼流氓。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[当你的程序不通过时]]></title>
-        <id>https://yingyouyu.github.io/post/dang-ni-de-cheng-xu-bu-tong-guo-shi/</id>
-        <link href="https://yingyouyu.github.io/post/dang-ni-de-cheng-xu-bu-tong-guo-shi/">
-        </link>
-        <updated>2020-04-16T09:44:14.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>本人被洛谷评测姬教育了，想AC却WA</strong></p>
-<h1 id="题外话教你一招wa">题外话——教你一招WA</h1>
-<p>所有题都输出<code>hello world</code></p>
-<h1 id="1为什么别人ac你偏偏wa">1.为什么别人AC你偏偏WA</h1>
-<p>这就是一个大坑，写代码写的好的人偏偏能避坑……（无语）<br>
-但是你试错也不会去试<code>100</code>次啊！<br>
-这就是你一直WA的理由？<br>
-（我看不下去了）</p>
-<h1 id="2如何解决一直wa的命运">2.如何解决一直WA的命运</h1>
-<p>重构代码，如果还不行再重构一遍，重构解决OI界100%的问题。<br>
-但是你重构<code>100</code>次还WA的话……<br>
-你还有什么理由去打OI！</p>
-<h1 id="3wa的根本原因">3.WA的根本原因</h1>
-<p>答案错误（最根本原因）<br>
-其实为什么WA，你翻译一下，<code>Wrong Answer</code>，不就是答案错误吗？<br>
-（其实这个谁都知道）</p>
-<h1 id="4试错10000遍还是错">4.试错10000遍还是错……</h1>
-<p><img src="https://yingyouyu.github.io/post-images/1587033297454.png" alt="" loading="lazy"><br>
-基本告别OI了，一万遍……评测姬都卡死了（指某谷）<br>
-再说你这试错你试了好几天了吧，<code>10000</code>次……<br>
-小OJ的评测姬估计都炸了……</p>
-<h1 id="5最好的避免wa的办法">5.最好的避免WA的办法</h1>
-<p>不去刷OJ，这样你不会WA，当然也不会有AC。</p>
 ]]></content>
     </entry>
 </feed>

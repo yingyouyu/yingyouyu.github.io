@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>真·明明不是JOJO结果DIO挨刀的梗 | Sasuke的小窝</title>
+<title>RQNOJ 14 校门外的树 题解 | Sasuke的小窝</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -24,10 +24,10 @@
 
 
 
-    <meta name="description" content="1.错的不是我，而是这个世界
-（DIO中刀×1）
-形容那些动漫中的角色黑化的时候，一般这类角色都有让人同情的过去，被逼黑化。出自《反叛的鲁鲁修》（《东京喰种》里的金木研和《日在校园》里的伊藤诚也说过同样的话，但是所代表的含义都不一样)
-2...." />
+    <meta name="description" content="1.题面
+题目描述
+某校大门外长度为L的马路上有一排树，每两棵相邻的树之间的间隔都是1米。我们可以把马路看成一个数轴，马路的一端在数轴0的位置，另一端在L的位置；数轴上的每个整数点，即0，1，2，……，L，都种有一棵树。
+由于马路上有一些区..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -93,31 +93,68 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">真·明明不是JOJO结果DIO挨刀的梗</h2>
-            <div class="post-date">2020-09-12</div>
+            <h2 class="post-title">RQNOJ 14 校门外的树 题解</h2>
+            <div class="post-date">2020-10-24</div>
             
             <div class="post-content" v-pre>
-              <h1 id="1错的不是我而是这个世界">1.错的不是我，而是这个世界</h1>
-<p>（DIO中刀×1）<br>
-形容那些动漫中的角色黑化的时候，一般这类角色都有让人同情的过去，被逼黑化。出自《反叛的鲁鲁修》（《东京喰种》里的金木研和《日在校园》里的伊藤诚也说过同样的话，但是所代表的含义都不一样)</p>
-<h1 id="2爆裂吧现实粉碎吧精神放逐这个世界">2.爆裂吧，现实！粉碎吧，精神！放逐这个世界！</h1>
-<p>（DIO再次中刀）<br>
-这个梗出自动漫《中二病也要谈恋爱》中小鸟游六花的超羞耻中二台词<br>
-<img src="https://api.jikipedia.com/upload/88276057502f7008550ddbe4cbe91f30_75.jpg" alt="" loading="lazy"><br>
-但是这句话用在承太郎那里真的巨合适（打爆砸瓦鲁多）</p>
-<h1 id="3王来承认王来允许王来背负整个世界">3.王来承认，王来允许，王来背负整个世界</h1>
-<p>（DIO第三次中刀，还有，替身是背不起来的doge）<br>
-在《Fate stay night》系列里吉尔伽美什说过的一段话，动画中是没有的，因为在动画化的时候这一段被删除了，因此动画中找不到的<br>
-<img src="https://api.jikipedia.com/upload/451a8d4900db06efb4b5d7aa8bd74630_scaled.jpg" alt="" loading="lazy"></p>
+              <h1 id="1题面">1.题面</h1>
+<h2 id="题目描述">题目描述</h2>
+<p>某校大门外长度为L的马路上有一排树，每两棵相邻的树之间的间隔都是1米。我们可以把马路看成一个数轴，马路的一端在数轴0的位置，另一端在L的位置；数轴上的每个整数点，即0，1，2，……，L，都种有一棵树。<br>
+由于马路上有一些区域要用来建地铁。这些区域用它们在数轴上的起始点和终止点表示。　　已知任一区域的起始点和终止点的坐标都是整数，区域之间可能有重合的部分。现在要把这些区域中的树（包括区域端点处的两棵树）移走。你的任务是计算将这些树都移走后，马路上还有多少棵树。</p>
+<h2 id="输入格式">输入格式</h2>
+<p>输入的第一行有两个整数：L（1 &lt;= L &lt;= 10000）和 M（1 &lt;= M &lt;= 100），L代表马路的长度，M代表区域的数目，L和M之间用一个空格隔开。接下来的M行每行包含两个不同的整数，用一个空格隔开，表示一个区域的起始点和终止点的坐标。</p>
+<h2 id="输出格式">输出格式</h2>
+<p>输出包括一行，这一行只包含一个整数，表示马路上剩余的树的数目。</p>
+<h2 id="样例输入">样例输入</h2>
+<pre><code>500 3
+150 300
+100 200
+470 471
+</code></pre>
+<h2 id="样例输出">样例输出</h2>
+<pre><code>298
+</code></pre>
+<h1 id="2分析">2.分析</h1>
+<p>本题是一道大水题，05年pj第一题（应该，毕竟这么水）<br>
+靠的就是小学的植树问题，当然还有初中的数轴（doge，毕竟题目里有说）<br>
+如果把本题的马路看成数轴的话，0坐标就是原点，正方向是已经确定的<br>
+然后计算共计多少棵树（其实这里作者吃瘪一次）<br>
+然后划分区间，把这些树移走，如果已经移走，就不做处理（难道你tm要挖到软流层？）<br>
+所以这题还是比较水的（至于陶陶摘苹果水还是这一题水，下次淘淘摘苹果我发题解时我会进行比较）</p>
+<h1 id="3代码">3.代码</h1>
+<p>这是自己写的</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+using namespace std;
+int a[10086],b[10086],x,y;
+bool vis[10086];
+int ans;
+int main(){
+    memset(vis,true,sizeof(vis));//先确定树都没被移走
+	cin&gt;&gt;x&gt;&gt;y;
+	ans=x+1;//算一算有几棵树，其实这里就是小学植树问题
+	for(int i=1;i&lt;=y;i++){
+		cin&gt;&gt;a[i]&gt;&gt;b[i];//输入要处理的区间
+		for(int j=a[i];j&lt;=b[i];j++){
+			if(vis[j]==true){//如果树没被移走
+				vis[j]=false;//移走
+				ans--;//树数量减一
+			}
+		}
+	}
+	cout&lt;&lt;ans;//输出最后树的数量
+	return 0;
+} 
+</code></pre>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://yingyouyu.github.io/post/znc7xi1z8/">
+                <a href="https://yingyouyu.github.io/post/uZpy6J2A_/">
                   <h3 class="post-title">
-                    盘点JOJO中那些奇妙的替身能力或面板
+                    2020鄞州区科技节编程比赛游记
                   </h3>
                 </a>
               </div>

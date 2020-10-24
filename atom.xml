@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2020-10-23T12:57:59.020Z</updated>
+    <updated>2020-10-24T12:15:18.985Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -10,6 +10,63 @@
     <logo>https://yingyouyu.github.io/images/avatar.png</logo>
     <icon>https://yingyouyu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sasuke的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[RQNOJ 14 校门外的树 题解]]></title>
+        <id>https://yingyouyu.github.io/post/HKg3jkrjX/</id>
+        <link href="https://yingyouyu.github.io/post/HKg3jkrjX/">
+        </link>
+        <updated>2020-10-24T12:07:03.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="1题面">1.题面</h1>
+<h2 id="题目描述">题目描述</h2>
+<p>某校大门外长度为L的马路上有一排树，每两棵相邻的树之间的间隔都是1米。我们可以把马路看成一个数轴，马路的一端在数轴0的位置，另一端在L的位置；数轴上的每个整数点，即0，1，2，……，L，都种有一棵树。<br>
+由于马路上有一些区域要用来建地铁。这些区域用它们在数轴上的起始点和终止点表示。　　已知任一区域的起始点和终止点的坐标都是整数，区域之间可能有重合的部分。现在要把这些区域中的树（包括区域端点处的两棵树）移走。你的任务是计算将这些树都移走后，马路上还有多少棵树。</p>
+<h2 id="输入格式">输入格式</h2>
+<p>输入的第一行有两个整数：L（1 &lt;= L &lt;= 10000）和 M（1 &lt;= M &lt;= 100），L代表马路的长度，M代表区域的数目，L和M之间用一个空格隔开。接下来的M行每行包含两个不同的整数，用一个空格隔开，表示一个区域的起始点和终止点的坐标。</p>
+<h2 id="输出格式">输出格式</h2>
+<p>输出包括一行，这一行只包含一个整数，表示马路上剩余的树的数目。</p>
+<h2 id="样例输入">样例输入</h2>
+<pre><code>500 3
+150 300
+100 200
+470 471
+</code></pre>
+<h2 id="样例输出">样例输出</h2>
+<pre><code>298
+</code></pre>
+<h1 id="2分析">2.分析</h1>
+<p>本题是一道大水题，05年pj第一题（应该，毕竟这么水）<br>
+靠的就是小学的植树问题，当然还有初中的数轴（doge，毕竟题目里有说）<br>
+如果把本题的马路看成数轴的话，0坐标就是原点，正方向是已经确定的<br>
+然后计算共计多少棵树（其实这里作者吃瘪一次）<br>
+然后划分区间，把这些树移走，如果已经移走，就不做处理（难道你tm要挖到软流层？）<br>
+所以这题还是比较水的（至于陶陶摘苹果水还是这一题水，下次淘淘摘苹果我发题解时我会进行比较）</p>
+<h1 id="3代码">3.代码</h1>
+<p>这是自己写的</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+using namespace std;
+int a[10086],b[10086],x,y;
+bool vis[10086];
+int ans;
+int main(){
+    memset(vis,true,sizeof(vis));//先确定树都没被移走
+	cin&gt;&gt;x&gt;&gt;y;
+	ans=x+1;//算一算有几棵树，其实这里就是小学植树问题
+	for(int i=1;i&lt;=y;i++){
+		cin&gt;&gt;a[i]&gt;&gt;b[i];//输入要处理的区间
+		for(int j=a[i];j&lt;=b[i];j++){
+			if(vis[j]==true){//如果树没被移走
+				vis[j]=false;//移走
+				ans--;//树数量减一
+			}
+		}
+	}
+	cout&lt;&lt;ans;//输出最后树的数量
+	return 0;
+} 
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020鄞州区科技节编程比赛游记]]></title>
         <id>https://yingyouyu.github.io/post/uZpy6J2A_/</id>
@@ -616,41 +673,6 @@ Win+K是Win10里的连接器，可以连接蓝牙音响、蓝牙鼠标、无线�
 <p>加班久了，眼花了吧？试一试这组Win+“+”吧。这是Win10里的放大镜快捷键，可以一键将整个屏幕放大。Win+“+”能够自动跟随鼠标，因此不用担心会被遮挡看不到信息。哦对了，怎么返回呢？很简单，再按一下Win+“-”就可以了。</p>
 <h1 id="写在最后">写在最后</h1>
 <p>Windows的快捷键是相当多的，Win10又在其基础上进行了部分扩充。总之快捷键是教室内，区分萌新和巨佬的重要技能，熟练使用快捷键能够大大提高日常效率。那你们学会了吗？（手动滑稽）</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[那些烦人的传奇广告，为何屡禁不止？]]></title>
-        <id>https://yingyouyu.github.io/post/na-xie-fan-ren-de-chuan-qi-guang-gao-wei-he-lu-jin-bu-zhi/</id>
-        <link href="https://yingyouyu.github.io/post/na-xie-fan-ren-de-chuan-qi-guang-gao-wei-he-lu-jin-bu-zhi/">
-        </link>
-        <updated>2020-04-17T09:55:58.000Z</updated>
-        <content type="html"><![CDATA[<p>该文章为一篇杂谈，关于那些烦人的广告而生。</p>
-<h1 id="从头来探究传奇">从头来探究传奇</h1>
-<p>传奇这种游戏你懂得，说什么“新手村送神装”，“一刀999，打不赢boss算我输”，甚至还有明星代言（成龙啊，xxx明星啊等等等等）<br>
-但是，传奇这种游戏为什么遍地开花，而人家网易精心做的《重装上阵》为什么只有一个服务器？（世界未解之谜）P.S：7月30日重装上阵日服开服</p>
-<h2 id="传奇这类游戏为什么会这么多">传奇这类游戏为什么会这么多</h2>
-<p>无良商家多，为了赚钱而编写传奇类网游、手游、端游……<br>
-而且这游戏，骗氪！腾讯不敢做的事情，他敢做！<br>
-（腾讯都没这么骗氪啊喂）<br>
-传奇，沦为了不氪金不能变强的游戏。不氪金，你哪来的+99神装？</p>
-<h2 id="玩传奇的都是什么人">玩传奇的都是什么人</h2>
-<p>搞不好都是那些无良商家的托，人家在同样时间内，立刻十转999级，而你呢，新手村还没打完……</p>
-<h1 id="如果你的手机电脑上有传奇">如果你的手机/电脑上有传奇</h1>
-<p>立刻卸载，立刻！立刻！</p>
-<h2 id="关于为什么要立刻卸载传奇我有话要说">关于“为什么要立刻卸载传奇”，我有话要说</h2>
-<p>玩传奇，还不如有时间写写代码，愉悦愉悦身心，去做点你想做的事。<br>
-接下来才是为什么卸载传奇的真正原因。</p>
-<h3 id="1占内存">1.占内存</h3>
-<p>我说的是大实话，这点手机/电脑内存还不如存点资料</p>
-<h3 id="2玩法单一">2.玩法单一</h3>
-<p>传奇只有升级变强这条路，但你看看隔壁网易的《重装上阵》，可以开自己的机甲和别人战斗，造赛车和别人在赛道上竞速，造高达以完成儿时梦想……传奇他做得到吗？！</p>
-<h2 id="so">so</h2>
-<p>你肯定了解为什么要卸载传奇了。</p>
-<h1 id="如何抵制传奇">如何抵制传奇</h1>
-<p>看到广告立刻删除广告，如果游戏内要你看广告的话，看完，死也别下载。<br>
-如果是百度网上看到，直接屏蔽，或者用高超的F12技能让他不出现在你的眼前。</p>
-<h2 id="但是那些传奇广告为啥屡禁不止">但是那些传奇广告为啥屡禁不止</h2>
-<p>太流氓，一个被禁再写一个再发，贼流氓。</p>
 ]]></content>
     </entry>
 </feed>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2020-10-24T12:15:18.985Z</updated>
+    <updated>2020-10-24T13:24:19.769Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -10,6 +10,45 @@
     <logo>https://yingyouyu.github.io/images/avatar.png</logo>
     <icon>https://yingyouyu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sasuke的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[陶陶摘苹果 题解]]></title>
+        <id>https://yingyouyu.github.io/post/Hkx-LYzMS/</id>
+        <link href="https://yingyouyu.github.io/post/Hkx-LYzMS/">
+        </link>
+        <updated>2020-10-24T13:14:20.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="1分析">1.分析</h1>
+<p>题面不用写了吧<br>
+经典大水题<br>
+直接看代码</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+using namespace std;
+int a[11],n,ans;
+const int x=30;
+int main(){
+    cin&gt;&gt;n;
+    n+=x;
+    for(int i=1;i&lt;=10;i++){
+        cin&gt;&gt;a[i];
+        if(a[i]&lt;=n){
+            ans++;
+        }
+    }
+    cout&lt;&lt;ans;
+    return 0;
+}
+</code></pre>
+<h1 id="2究竟是校门外的树水还是这道题水">2.究竟是校门外的树水还是这道题水？</h1>
+<p><a href="https://yingyouyu.github.io/post/HKg3jkrjX/">校门外的树题解参见这里</a></p>
+<blockquote>
+<p>靠的就是小学的植树问题，当然还有初中的数轴（doge，毕竟题目里有说）<br>
+如果把本题的马路看成数轴的话，0坐标就是原点，正方向是已经确定的<br>
+然后计算共计多少棵树（其实这里作者吃瘪一次）<br>
+然后划分区间，把这些树移走，如果已经移走，就不做处理（难道你tm要挖到软流层？）<br>
+所以说这题就是考加法和大小比较<br>
+能不水吗</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RQNOJ 14 校门外的树 题解]]></title>
         <id>https://yingyouyu.github.io/post/HKg3jkrjX/</id>
@@ -39,7 +78,7 @@
 如果把本题的马路看成数轴的话，0坐标就是原点，正方向是已经确定的<br>
 然后计算共计多少棵树（其实这里作者吃瘪一次）<br>
 然后划分区间，把这些树移走，如果已经移走，就不做处理（难道你tm要挖到软流层？）<br>
-所以这题还是比较水的（至于陶陶摘苹果水还是这一题水，下次淘淘摘苹果我发题解时我会进行比较）</p>
+所以这题还是比较水的（至于陶陶摘苹果水还是这一题水，下次陶陶摘苹果我发题解时我会进行比较）</p>
 <h1 id="3代码">3.代码</h1>
 <p>这是自己写的</p>
 <pre><code class="language-cpp">#include&lt;iostream&gt;
@@ -611,68 +650,6 @@ int main(){
 }
 </code></pre>
 <p>（手动滑稽）</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[萌新必学！这15组Win10快捷键不懂就亏大了]]></title>
-        <id>https://yingyouyu.github.io/post/meng-xin-bi-xue-zhe-15-zu-win10-kuai-jie-jian-bu-dong-jiu-yu-da-liao/</id>
-        <link href="https://yingyouyu.github.io/post/meng-xin-bi-xue-zhe-15-zu-win10-kuai-jie-jian-bu-dong-jiu-yu-da-liao/">
-        </link>
-        <updated>2020-04-20T11:31:23.000Z</updated>
-        <content type="html"><![CDATA[<p>知道怎样区分萌新和巨佬么？那就要看他会多少Win10快捷键了。萌新写代码全靠手打，巨佬写代码居然摸鱼！巨佬靠的就是自身“过硬”的快捷键技术才练成的边写代码边摸鱼的神技。</p>
-<h1 id="一键显桌面">一键显桌面</h1>
-<h2 id="快捷键wind">快捷键：Win+D</h2>
-<p>不想让老师看到你在做什么，直接按下“Win+D”就可以了。<br>
-Win+D可以快速显示桌面，顺带将所有的窗口最小化，这样神不知鬼不觉地……就让别人看不到你刚刚做什么了。不过这个技巧有两个要注意的地方，一是对游戏无效，二是……太明目张胆了，此地无银三百两懂不？</p>
-<h1 id="一键打开资源管理器">一键打开资源管理器</h1>
-<h2 id="快捷键wine">快捷键：Win+E</h2>
-<p>正在做PPT，临时需要查找文件，那么按下“Win+E”就OK了。<br>
-Win+E可以一键打开资源管理器，省却了回到桌面再双击“此电脑”的麻烦，写教案提效妥妥的。而且你可以通过选项，控制打开的是“此电脑”还是“快速访问”，萌新一定要学会它哟！</p>
-<h1 id="一键锁屏">一键锁屏</h1>
-<h2 id="快捷键winl">快捷键：Win+L</h2>
-<p>起身去洗手间电脑一定要关机？NO！在此之前，你一定要按一下“Win+L”。<br>
-Win+L是Win10里的锁屏键，也就是说无论是你还是其他意图不明的人，只要再想使用你的电脑，就必须输入密码了。好处不多说了，防止隐私泄露，快速返回工作状态，这个可要比关机实在多了。</p>
-<h1 id="一键切桌面">一键切“桌面”</h1>
-<h2 id="快捷键winctrl">快捷键：Win+Ctrl+→/←</h2>
-<p>Win10的虚拟桌面大家都用过，通过为不同任务设置不同的“桌面”，能够让工作更有条理，轻轻松松过一把“多显示器”的瘾。问题是……如何在不同的“桌面”间切换呢？这就要用到快捷键Win+Ctrl+→/←了。<br>
-简单来说，切换到左桌面，点击Win+Ctrl+←，切换到右桌面，点击Win+Ctrl+→。对付老师，这一招可要比刚才的Win+D实用多了！（悄悄说一句，游戏也可以用哦~）</p>
-<h1 id="一键搜索">一键搜索</h1>
-<h2 id="快捷键wins">快捷键：Win+S</h2>
-<p>Win10的搜索大家都用过，查个文件、找个软件还是相当方便的。不过每次都要用鼠标，是不是有点……太那个了！那么对应的快捷键，就是Win+S。</p>
-<h1 id="多重剪贴板">多重剪贴板</h1>
-<h2 id="快捷键winv">快捷键：Win+V</h2>
-<p>Ctrl+V大家都用过，Win+V知道的就比较少了。简单来说，Ctrl+V每次只能粘贴一个，而Win+V则可以调出复制历史，通过点击多次粘贴。于是青史留名、升级加薪就靠它了！除了文字外，图片也是Win+V的拿手好戏！甚至你可以将其他Win10设备里的内容直接粘贴过来，真正做到“在家复制，教室里粘贴”。</p>
-<h1 id="一键截图">一键截图</h1>
-<h2 id="快捷键winshifts">快捷键：Win+Shift+S</h2>
-<p>还在抱怨Win10里没有截图软件？试一试Win+Shift+S吧，按下后屏幕会自动暗化，顶端弹出一个快捷截图栏。无论是截窗口、截屏幕、截区域，还是随性地画个圈圈去截图，统统支持。截好的内容可以快速编辑与分享，没试过的赶快去试吧！</p>
-<h1 id="一键语音输入">一键语音输入</h1>
-<h2 id="快捷键winh">快捷键：Win+H</h2>
-<p>打字打累了，可以试一试Win+H。Win+H是Win10里的语音识别键，按下后会呼出识别框，之后就可以对着麦克风说话了。Win+H的识别率很高，甚至可以语音添加标点，妥妥的办公神器呀！</p>
-<h1 id="白板">白板</h1>
-<h2 id="快捷键winw">快捷键：Win+W</h2>
-<p>先提一句，不是搓麻将那个白板！<br>
-WhiteBoard是Win10里的电子白板，打开后能像在普通白板上一样，直接在屏幕上书写与圈释。它有着媲美OneNote的手感，又不像OneNote那样死板地固守某一操作。那么它是如何调出的？这就是Win+W了。</p>
-<h1 id="一键显日历">一键显日历</h1>
-<h2 id="快捷键winaltd">快捷键：Win+Alt+D</h2>
-<p>这个快捷键就像Win+D一样没用，唯一的作用就是在你工作时，可以一键将日历面板调出来。看看日程呀，查查假期呀……总之快捷键就是Win+Alt+D，有需要的自取吧。</p>
-<h1 id="一键录屏">一键录屏</h1>
-<h2 id="快捷键wing">快捷键：Win+G</h2>
-<p>想把你的屏幕操作录下来？不妨试一试Win+G，这是Win10里的录屏快捷键，点击中间那个圆点按钮就可以了。和第三方软件相比，Win10的录屏功能不但清晰，而且录出的文件体积也不大，没用过的一定要试一试。</p>
-<h1 id="一键投影">一键投影</h1>
-<h2 id="快捷键winp">快捷键：Win+P</h2>
-<p>连接投影仪，把PPT上的内容投射到大屏上，就一定要用到Win+P。Win10总共提供了四种投影模式，分别是只在电脑上显示、投影仪和电脑显示相同内容、把投影仪当作扩展屏幕使用（投影PPT首选）、只在投影仪上显示。这是编程老师的必会技能，学生不会or学生全会就全看它了。</p>
-<h1 id="一键连电视">一键连电视</h1>
-<h2 id="快捷键wink">快捷键：Win+K</h2>
-<p>能连电脑的可不仅仅是投影仪，如果在学习编程的教室里面，只有一台智能电视，不妨来试试Win+K。<br>
-Win+K是Win10里的连接器，可以连接蓝牙音响、蓝牙鼠标、无线显示器等等。如果你的电脑和电视均支持Miracast协议，那么就可以利用这个方法，直接将电脑里的内容投影到电视上了。</p>
-<h1 id="快速启动软件">快速启动软件</h1>
-<h2 id="快捷键win123">快捷键：Win+1/2/3……</h2>
-<p>看看你的任务栏上是不是躺着一排软件？如何快速启动它们呢？最简单一个办法，就是按下Windows键，然后按顺序点击数字，其中“Win+1”代表启动任务栏左侧第一款软件，“Win+2”代表启动任务栏左侧第二款软件，以此类推。</p>
-<h1 id="一键放大">一键放大</h1>
-<h2 id="快捷键win-">快捷键：Win+“+/-”</h2>
-<p>加班久了，眼花了吧？试一试这组Win+“+”吧。这是Win10里的放大镜快捷键，可以一键将整个屏幕放大。Win+“+”能够自动跟随鼠标，因此不用担心会被遮挡看不到信息。哦对了，怎么返回呢？很简单，再按一下Win+“-”就可以了。</p>
-<h1 id="写在最后">写在最后</h1>
-<p>Windows的快捷键是相当多的，Win10又在其基础上进行了部分扩充。总之快捷键是教室内，区分萌新和巨佬的重要技能，熟练使用快捷键能够大大提高日常效率。那你们学会了吗？（手动滑稽）</p>
 ]]></content>
     </entry>
 </feed>

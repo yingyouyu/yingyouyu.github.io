@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Sasuke的小窝</title>
+<title>陶陶摘苹果 题解 | Sasuke的小窝</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,16 +12,29 @@
 <link rel="stylesheet" href="https://yingyouyu.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="たくさんの絆があって、自分だけを迷わせます。強い思いと大切な思いは、自分を弱くさせるだけです。">
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    
+    <meta name="description" content="1.分析
+题面不用写了吧
+经典大水题
+直接看代码
+#include&lt;iostream&gt;
+using namespace std;
+int a[11],n,ans;
+const int x=30;
+int main(){
+    ..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -85,64 +98,65 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://yingyouyu.github.io/post/meng-xin-bi-xue-zhe-15-zu-win10-kuai-jie-jian-bu-dong-jiu-yu-da-liao/">
-                  <h2 class="post-title">萌新必学！这15组Win10快捷键不懂就亏大了</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-20
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://yingyouyu.github.io/post/na-xie-fan-ren-de-chuan-qi-guang-gao-wei-he-lu-jin-bu-zhi/">
-                  <h2 class="post-title">那些烦人的传奇广告，为何屡禁不止？</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-17
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://yingyouyu.github.io/post/dang-ni-de-cheng-xu-bu-tong-guo-shi/">
-                  <h2 class="post-title">当你的程序不通过时</h2>
-                </a>
-                <div class="post-date">
-                  2020-04-16
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-                <a class="right" href="https://yingyouyu.github.io/post/dang-ni-de-cheng-xu-bu-tong-guo-shi/">
-                  <div class="feature-container" style="background-image: url('https://cdn.luogu.com.cn/upload/image_hosting/qw5prvdc.png')">
-                  </div>
-                </a>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">陶陶摘苹果 题解</h2>
+            <div class="post-date">2020-10-24</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="1分析">1.分析</h1>
+<p>题面不用写了吧<br>
+经典大水题<br>
+直接看代码</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+using namespace std;
+int a[11],n,ans;
+const int x=30;
+int main(){
+    cin&gt;&gt;n;
+    n+=x;
+    for(int i=1;i&lt;=10;i++){
+        cin&gt;&gt;a[i];
+        if(a[i]&lt;=n){
+            ans++;
+        }
+    }
+    cout&lt;&lt;ans;
+    return 0;
+}
+</code></pre>
+<h1 id="2究竟是校门外的树水还是这道题水">2.究竟是校门外的树水还是这道题水？</h1>
+<p><a href="https://yingyouyu.github.io/post/HKg3jkrjX/">校门外的树题解参见这里</a></p>
+<blockquote>
+<p>靠的就是小学的植树问题，当然还有初中的数轴（doge，毕竟题目里有说）<br>
+如果把本题的马路看成数轴的话，0坐标就是原点，正方向是已经确定的<br>
+然后计算共计多少棵树（其实这里作者吃瘪一次）<br>
+然后划分区间，把这些树移走，如果已经移走，就不做处理（难道你tm要挖到软流层？）<br>
+所以说这题就是考加法和大小比较<br>
+能不水吗</p>
+</blockquote>
 
-          <div class="pagination-container">
-  
-    <a href="https://yingyouyu.github.io/" class="prev"><i class="icon-arrow-ios-back-outline"></i> 上一页</a>
-  
-  
-</div>
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://yingyouyu.github.io/post/HKg3jkrjX/">
+                  <h3 class="post-title">
+                    RQNOJ 14 校门外的树 题解
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -168,6 +182,29 @@ var app = new Vue({
     hljs.initHighlightingOnLoad()
   </script>
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2020-11-22T06:46:45.349Z</updated>
+    <updated>2020-12-06T08:57:28.283Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -10,6 +10,73 @@
     <logo>https://yingyouyu.github.io/images/avatar.png</logo>
     <icon>https://yingyouyu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sasuke的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[关于水题]]></title>
+        <id>https://yingyouyu.github.io/post/ZLYEQ8-o8/</id>
+        <link href="https://yingyouyu.github.io/post/ZLYEQ8-o8/">
+        </link>
+        <updated>2020-10-28T09:57:15.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="1-词语解释">1 词语解释</h1>
+<blockquote>
+<p>【词目】水题<br>
+【释义】很容易解答的问题；一眼就能看出答案或做法的题目；没有存在价值或意义的题目。<br>
+【出处】为了每年的ACM/ICPC比赛，很多网站出了自己的在线题目及判题系统。很多人在做题时，就会评论题目的难易程度。很简单的题目，就会被称做“水题”，说这道题很“水”。很快“水题”这一词语在网络上流传，成为大家称呼非常简单的题目的代名词。后来一些没有出题价值的题目也被称做“水题”。每个做题网站第一道题目都是这种类型。<br>
+【评价】水题的存在主要有如下作用：<br>
+1.为了让做题者练习基础；<br>
+2.充数（毕竟好题不是那么容易出）；<br>
+3.在正式比赛时，不至于一道题目都做不出来，至少能做出水题。<br>
+引用自百度百科</p>
+</blockquote>
+<h1 id="2-什么算是水题">2 什么算是水题</h1>
+<h2 id="21-ab">2|1 A+B</h2>
+<p>这是真的水题<br>
+毕竟是每个OJ的第一题（除了洛谷）</p>
+<h2 id="22-历年noipcsp第一题">2|2 历年NOIP/CSP第一题</h2>
+<p>这就不用说吧<br>
+如<a href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1982">CSP-J 2019第一题</a><br>
+还有<a href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1942">NOIP PJ 2008 第一题</a><br>
+等等等等<br>
+反正有时候水的一批</p>
+<h2 id="23-洛谷的第一题">2|3 洛谷的第一题</h2>
+<p>这能不水吗<br>
+典型的字符串输出<br>
+我都说不下去了</p>
+<h2 id="24-区级-市级竞赛第一题不确定">2|4 区级、市级竞赛第一题（不确定）</h2>
+<p>毕竟今年区赛还是比较坑的<br>
+第一题我都没全对，9个点拿到（共计十个点）<br>
+但是一看题目<br>
+诶这难度不挺正常吗<br>
+淦<br>
+<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1606039773633&amp;di=22a20f2ead5de9b79bb1232f82b4bb8b&amp;imgtype=0&amp;src=http%3A%2F%2Fww2.sinaimg.cn%2Fbmiddle%2F9150e4e5gy1gbxuzvuhj1j205i05iq2r.jpg" alt="" loading="lazy"></p>
+<h1 id="3-水题存在的意义">3 水题存在的意义</h1>
+<h2 id="31-让你骗分">3|1 让你骗分</h2>
+<p>这很真实<br>
+基本上大部分水题都可以用骗分的方法AC<br>
+但是某些水题……</p>
+<h2 id="32-充数">3|2 充数</h2>
+<p>毕竟好题不容易出啊<br>
+当过出题人都懂<br>
+当你没好题时……<br>
+<strong>出水题解决一切没好题</strong></p>
+<h2 id="33-给你打基础">3|3 给你打基础</h2>
+<p><del>某退役OIer说：水题真的只是用来打基础的</del><br>
+例如A+B<br>
+至少可以练一下用多种方法去解<br>
+例如给你个方程</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>∗</mo><mrow><mo fence="true">(</mo><mfrac><mi>x</mi><mn>3</mn></mfrac><mo>+</mo><mfrac><mi>x</mi><mn>9</mn></mfrac><mo>−</mo><mfrac><mi>x</mi><mn>18</mn></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><mn>14</mn></mrow><annotation encoding="application/x-tex">2*\left(\dfrac{x}{3}+\dfrac{x}{9}-\dfrac{x}{18}\right)=14
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.8359999999999999em;vertical-align:-0.686em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size2">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">3</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">9</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mord">8</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size2">)</span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">4</span></span></span></span></span></p>
+<p>真的可以不按标准方法来啊</p>
+<h1 id="4-关于部分oj水题的定义">4 关于部分OJ水题的定义</h1>
+<p>自己看，有点用处</p>
+<h2 id="41-洛谷">4|1 洛谷</h2>
+<p>毕竟某谷部分黄题也是水题（参考深入浅出的部分黄题）<br>
+所以洛谷的水题部分为：红题~橙题，包括部分黄题</p>
+<h2 id="42-一本通">4|2 一本通</h2>
+<p>前面几题<br>
+and历年NOIP普及第一题（大部分）<br>
+普及组部分别的题也可能是水题</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[陶陶摘苹果 题解]]></title>
         <id>https://yingyouyu.github.io/post/Hkx-LYzMS/</id>
@@ -455,201 +522,6 @@ boom</p>
 <p>wow，我进复赛了</p>
 <h1 id="复赛当天">复赛当天</h1>
 <p>绝望</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为什么C++永远比不过Python]]></title>
-        <id>https://yingyouyu.github.io/post/wei-shi-me-cyong-yuan-gan-bu-guo-python/</id>
-        <link href="https://yingyouyu.github.io/post/wei-shi-me-cyong-yuan-gan-bu-guo-python/">
-        </link>
-        <updated>2020-05-04T12:12:01.000Z</updated>
-        <content type="html"><![CDATA[<p>本文从客观角度出发，用较为【数据删除】的说法来说明。</p>
-<h1 id="1代码结构">1.代码结构</h1>
-<h2 id="11-代码非主体部分">1|1 代码非主体部分</h2>
-<p>以高精加为例<br>
-C++：</p>
-<pre><code class="language-cpp">#include&lt;iostream&gt;
-#include&lt;cstdio&gt;
-#include&lt;cstring&gt;
-using namespace std;
-char a1[100],b1[100];
-int a[100],b[100],c[100],lena,lenb,lenc,i,x;
-int main(){
-    memset(a,0,sizeof(a));
-  	memset(b,0,sizeof(b));
-  	memset(c,0,sizeof(c));
-  	gets(a1);
- 	gets(b1);                                                     	//输入加数与被加数
-  	lena=strlen(a1);
-  	lenb=strlen(b1);
-  	for (i=0;i&lt;=lena-1;i++) a[lena-i]=a1[i]-48;    	//加数放入a数组
-　 for (i=0;i&lt;=lenb-1;i++) b[lenb-i]=b1[i]-48;               //加数放入b数组
-  	lenc =1;
-  	x=0;
-    while (lenc &lt;=lena||lenc &lt;=lenb){
-        c[lenc]=a[lenc]+b[lenc]+x;     //两数相加
-	　 x=c[lenc]/10;
-	　c[lenc]%=10;
-		lenc++;
-    }
-    c[lenc]=x; 
-	if (c[lenc]==0)
-		lenc--;                                    //处理最高进位
-	for (i=lenc;i&gt;=1;i--) 
-	cout&lt;&lt;c[i];                                     //输出结果
-	cout&lt;&lt;endl;
-	return 0;
-}
-</code></pre>
-<p>Python：</p>
-<pre><code class="language-python">from functools import reduce#导入reduce用于将整数列表中的内容转换为字符串
-def add(a, b):
-    if len(a) &gt; len(b):#将输入的数字左端补齐为同样的长度
-        b = b.zfill(len(a) - len(b) + 1)
-    else:
-        a = a.zfill(len(b) - len(a) + 1)
-    #(&quot;0&quot; + str(a))前面加&quot;0&quot;的原因是防止最高位进位是超过列表的容量限制
-    #比如说9+9会向前面进一位,如果没有添加额外的0的话进位1就没地方存储
-    a = list(map(lambda x : int(x), (&quot;0&quot; + str(a)).strip()))
-    b = list(map(lambda x : int(x), (&quot;0&quot; + str(b)).strip()))
-
-    for i in range(len(a) - 1, 0, -1):
-        temp = a[i] + b[i];
-        a[i - 1] += temp // 10
-        a[i] = temp % 10
-    return int(reduce(lambda x, y : str(x) + str(y), a))#转换为字符串
-
-a, b = input(&quot;input a: &quot;), input(&quot;input b: &quot;)
-print(add(a, b))
-</code></pre>
-<p>搞错了，Python是下面一个：</p>
-<pre><code class="language-python">print(int(input())+int(input()))
-</code></pre>
-<p>我：服了服了<br>
-没想到Python如此的简单（滑稽）<br>
-首先先看一下C++的非代码主体部分（头文件+变量定义）：</p>
-<pre><code class="language-cpp">#include&lt;iostream&gt;
-#include&lt;cstdio&gt;
-#include&lt;cstring&gt;
-using namespace std;
-char a1[100],b1[100];
-int a[100],b[100],c[100],lena,lenb,lenc,i,x;
-</code></pre>
-<p>but！<br>
-Python并没有这些东西！</p>
-<h2 id="12-代码主体结构">1|2 代码主体结构</h2>
-<p>此处的主体结构指C++的<code>main()</code>函数和别的函数和Python的非定义变量语句。<br>
-C++：</p>
-<pre><code class="language-cpp">int main(){
-    memset(a,0,sizeof(a));
-  	memset(b,0,sizeof(b));
-  	memset(c,0,sizeof(c));
-  	gets(a1);
- 	gets(b1);                                                     	//输入加数与被加数
-  	lena=strlen(a1);
-  	lenb=strlen(b1);
-  	for (i=0;i&lt;=lena-1;i++) a[lena-i]=a1[i]-48;    	//加数放入a数组
-　 for (i=0;i&lt;=lenb-1;i++) b[lenb-i]=b1[i]-48;               //加数放入b数组
-  	lenc =1;
-  	x=0;
-    while (lenc &lt;=lena||lenc &lt;=lenb){
-        c[lenc]=a[lenc]+b[lenc]+x;     //两数相加
-	　 x=c[lenc]/10;
-	　c[lenc]%=10;
-		lenc++;
-    }
-    c[lenc]=x; 
-	if (c[lenc]==0)
-		lenc--;                                    //处理最高进位
-	for (i=lenc;i&gt;=1;i--) 
-	cout&lt;&lt;c[i];                                     //输出结果
-	cout&lt;&lt;endl;
-	return 0;
-}
-</code></pre>
-<p>但是！<br>
-Python就那么一句话！</p>
-<pre><code class="language-python">print(int(input())+int(input()))
-</code></pre>
-<p>大惊。</p>
-<h1 id="2输出语句的差异">2.输出语句的差异</h1>
-<p>首先看一下<a href="https://www.luogu.com.cn/problem/P1000">某谷经典题目</a><br>
-这题当年坑死我也（输出这么大一张字符画，复制都累死了）<br>
-C++正解：</p>
-<pre><code class="language-cpp">#include&lt;iostream&gt;
-using namespace std;
-int main()
-{
-	cout&lt;&lt;&quot;                ********&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;               ************&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;               ####....#.&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;             #..###.....##....&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;             ###.......######              ###            ###&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;                ...........               #...#          #...#&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;               ##*#######                 #.#.#          #.#.#&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;            ####*******######             #.#.#          #.#.#&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;           ...#***.****.*###....          #...#          #...#&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;           ....**********##.....           ###            ###&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;           ....****    *****....&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;             ####        ####&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;          ######        ######&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;##############################################################&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;#...#......#.##...#......#.##...#......#.##------------------#&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;###########################################------------------#&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;#..#....#....##..#....#....##..#....#....#####################&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;##########################################    #----------#&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;#.....#......##.....#......##.....#......#    #----------#&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;##########################################    #----------#&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#&quot;&lt;&lt;endl;
-	cout&lt;&lt;&quot;##########################################    ############&quot;&lt;&lt;endl;
-	return 0;
-}
-</code></pre>
-<p>但是，但是……<br>
-Python居然可以写成这样：</p>
-<pre><code class="language-python">print('''                ********
-               ************
-               ####....#.
-             #..###.....##....
-             ###.......######              ###            ###
-                ...........               #...#          #...#
-               ##*#######                 #.#.#          #.#.#
-            ####*******######             #.#.#          #.#.#
-           ...#***.****.*###....          #...#          #...#
-           ....**********##.....           ###            ###
-           ....****    *****....
-             ####        ####
-           ######        ######
-##############################################################
-#...#......#.##...#......#.##...#......#.##------------------#
-###########################################------------------#
-#..#....#....##..#....#....##..#....#....#####################
-##########################################    #----------#
-#.....#......##.....#......##.....#......#    #----------#
-##########################################    #----------#
-#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#
-##########################################    ############''')
-</code></pre>
-<p>多行字符串就是好啊<br>
-（但是山外有山，PHP更方便）<br>
-but<br>
-C也可以写多行字符串……</p>
-<h1 id="3是否需要编译">3.是否需要编译</h1>
-<p>C++是典型的要编译的语言，但是Python并不需要编译，直接解释运行……<br>
-Python：C++他就是个屑啦<br>
-C++：Python你欺人太甚</p>
-<h1 id="总结">总结</h1>
-<p>所以Python才会强到全员都学<br>
-所以Python才会被CCF给ban掉<br>
-所以……</p>
-<pre><code class="language-cpp">#include&lt;iostream&gt;
-using namespace std;
-int main(){
-    cout&lt;&lt;&quot;C++永垂不朽！&quot;&lt;&lt;endl;
-    return 0;
-}
-</code></pre>
-<p>（手动滑稽）</p>
 ]]></content>
     </entry>
 </feed>

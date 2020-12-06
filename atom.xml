@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2020-12-06T11:23:37.795Z</updated>
+    <updated>2020-12-06T11:30:04.627Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://yingyouyu.github.io/images/avatar.png</logo>
     <icon>https://yingyouyu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sasuke的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[友链大全]]></title>
+        <id>https://yingyouyu.github.io/post/iylIBLcGk/</id>
+        <link href="https://yingyouyu.github.io/post/iylIBLcGk/">
+        </link>
+        <updated>2020-12-06T11:23:45.000Z</updated>
+        <content type="html"><![CDATA[<p>(小胡的主页，博客需要超传)[https://horselake.github.io/WebStart]<br>
+(范无咎的博客)[https://fanwujiu.github.io/]<br>
+(某谷神帖)[https://www.luogu.com.cn/discuss/show/61884]<br>
+某谷管理员soha在VIJOS发的帖子[https://vijos.org/discuss/5eb6cee2f41362fcf01e05ce#1589619048]<br>
+（(原贴在此)[https://www.luogu.com.cn/discuss/show/223176]）<br>
+(某谷最强存在)[https://www.luogu.com.cn/user/8457]（其实是chen_zhe啦）<br>
+(UJC日报索引)[https://www.luogu.com.cn/blog/Itachi-Uchiha/ujc-news-index]（有、好看的）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于水题]]></title>
         <id>https://yingyouyu.github.io/post/ZLYEQ8-o8/</id>
@@ -486,41 +501,6 @@ DIO吸收了乔瑟夫的血，恢复了作为吸血鬼的全部能力，停止�
 #4<br>
 庞某晨：“祖安人民欢乐多啊（滑稽）”<br>
 我：“我看你是不想活了是不是？我已经把你妈找来了，还用火钳给她腚眼子捅了个洞。你TM赶紧给我钻进去！我不想再看见你一次！”（祖安猎妈中）</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[宁波市四眼碶小学2020年奥数比赛游记]]></title>
-        <id>https://yingyouyu.github.io/post/Eo3f7_zFm/</id>
-        <link href="https://yingyouyu.github.io/post/Eo3f7_zFm/">
-        </link>
-        <updated>2020-05-15T10:45:54.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="初赛前n天">初赛前N天</h1>
-<p>被方老师莫名点到，我心里就是<br>
-<img src="http://5b0988e595225.cdn.sohucs.com/images/20200418/0d242f29652e43dd8aa5b6f2312b4e12.png" alt="" loading="lazy"><br>
-总之心里全是问号就对了<br>
-还好我心态没炸<br>
-不然……后果不堪设想啊</p>
-<h1 id="初赛前1天">初赛前1天</h1>
-<p>13日，晴，我逃学打疫苗<img src="https://gsp0.baidu.com/5aAHeD3nKhI2p27j8IqW0jdnxx1xbK/tb/editor/images/client/image_emoticon25.png" alt="" loading="lazy"><br>
-忘记和家长说了<br>
-我：chhh（防屏蔽）<br>
-我真没说明天初赛的事情</p>
-<h1 id="初赛前0天初赛当天">初赛前0天（初赛当天）</h1>
-<p><img src="http://tiebapic.baidu.com/forum/w%3D580/sign=1437b12b892f07085f052a08d925b865/e77080d4b31c8701326a1182307f9e2f0608fffe.jpg" alt="" loading="lazy"><br>
-在考试时当场裂开<br>
-我炸了<br>
-boom</p>
-<h1 id="初赛后一天">初赛后一天</h1>
-<p>今天和同学对了答案，发现至少对了3题<br>
-距离及格线还有好远啊<br>
-这水平<br>
-<img src="https://imgsa.baidu.com/forum/w%3D580/sign=1d5daa8b821001e94e3c1407880f7b06/b99530390cd79123294c7716a2345982b2b7803f.jpg" alt="" loading="lazy"><br>
-反正是不可能进复赛了<br>
-比CSP-J 2019还惨</p>
-<h1 id="复赛前一天">复赛前一天</h1>
-<p>wow，我进复赛了</p>
-<h1 id="复赛当天">复赛当天</h1>
-<p>绝望</p>
 ]]></content>
     </entry>
 </feed>

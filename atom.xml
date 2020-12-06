@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2020-12-06T11:31:19.822Z</updated>
+    <updated>2020-12-06T11:36:40.964Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -16,13 +16,13 @@
         <link href="https://yingyouyu.github.io/post/iylIBLcGk/">
         </link>
         <updated>2020-12-06T11:23:45.000Z</updated>
-        <content type="html"><![CDATA[<p>(小胡的主页，博客需要超传)[https://horselake.github.io/WebStart]<br>
-(范无咎的博客)[https://fanwujiu.github.io/]<br>
-(某谷神帖)[https://www.luogu.com.cn/discuss/show/61884]<br>
-某谷管理员soha在VIJOS发的帖子[https://vijos.org/discuss/5eb6cee2f41362fcf01e05ce#1589619048]<br>
-（(原贴在此)[https://www.luogu.com.cn/discuss/show/223176]）<br>
-(某谷最强存在)[https://www.luogu.com.cn/user/8457]（其实是chen_zhe啦）<br>
-(UJC日报索引)[https://www.luogu.com.cn/blog/Itachi-Uchiha/ujc-news-index]（有、好看的）</p>
+        <content type="html"><![CDATA[<p><a href="https://horselake.github.io/WebStart">小胡的主页，博客需要超传</a><br>
+<a href="https://fanwujiu.github.io/">范无咎的博客</a><br>
+<a href="https://www.luogu.com.cn/discuss/show/61884">某谷神帖</a><br>
+<a href="https://vijos.org/discuss/5eb6cee2f41362fcf01e05ce#1589619048">某谷管理员soha在VIJOS发的帖子</a><br>
+（<a href="https://www.luogu.com.cn/discuss/show/223176">原贴在此</a>）<br>
+<a href="https://www.luogu.com.cn/user/8457">某谷最强存在</a>（其实是chen_zhe啦）<br>
+<a href="https://www.luogu.com.cn/blog/Itachi-Uchiha/ujc-news-index">UJC日报索引</a>（有、好看的）</p>
 ]]></content>
     </entry>
     <entry>

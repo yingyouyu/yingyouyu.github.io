@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2021-07-31T13:42:39.956Z</updated>
+    <updated>2021-07-31T13:43:21.636Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -90,7 +90,7 @@ OK，那萌兔要给“偷胶君”360度无死角的洗地，就必须要先从
 <img src="https://i0.hdslb.com/bfs/article/05099103132ddba979be0178198883e421506408.jpg@942w_471h_progressive.webp" alt="" loading="lazy"><br>
 聪明的小伙伴们肯定会提问，既然不同厚度的收缩量不同，那就根据零件各部位不同厚度来单独计算收缩量不就可以解决问题了嘛？<br>
 先不说模具设计时对各部位独立计算收缩量的计算量有多庞大，单单就工业生产中会产生的误差就注定这个法子是不可行的。<br>
-还拿上文中提到的ABS原料为例，4/1000的收缩率其实只是一个理想值，实际在生产的过程是会有误差的，ABS实际的收缩率其实应该是4/1000~9/1000之间，所以设计模具时必须把收缩误差也计算在内，由此可以得到一个结论：<strong>零件厚度越小，收缩量的误差就越小，零件表面的精度也就越高！<strong>所以说，现在大家能玩到组合度完美的模型，其实有一大半都是</strong>“偷胶”的功劳</strong>哦！<br>
+还拿上文中提到的ABS原料为例，4/1000的收缩率其实只是一个理想值，实际在生产的过程是会有误差的，ABS实际的收缩率其实应该是4/1000~9/1000之间，所以设计模具时必须把收缩误差也计算在内，由此可以得到一个结论： <strong>零件厚度越小，收缩量的误差就越小，零件表面的精度也就越高！</strong> 所以说，现在大家能玩到组合度完美的模型，其实有一大半都是 <strong>“偷胶”的功劳</strong> 哦！<br>
 <img src="https://i0.hdslb.com/bfs/article/60ae6d274614e08d7c45ed8055b71201d44fefa4.jpg@821w_360h_progressive.webp" alt="" loading="lazy"><br>
 那由此规律能不能反过来理解零件的<strong>肉厚做的越薄精度就越高</strong>的结论呢？理论上是正确的，但是薄过头了则会出现强度不足的问题，那可就得不偿失了！所以为了要在强度和精度之间寻找一个平衡点，一些常见的材料都会有各自最适合的肉厚范围，（ABS的情况下最适合的厚度在1.1mm~3.5mm之间）只有在适当的范围内零件才能在有强度保证的前提下获得最好的精度。所以，这就是模型**必须“偷胶”<strong>的原因之一。<br>
 除了考虑精度之外，必须“偷胶”的另一个原因是，一个较大的实心零件在冷却过程中是由外向内冷却的，外壳会比中心更快冷却，这样在冷却过程中实心零件的中心部分就会产生内部应力，在这个内部应力的作用之下，轻则零件表面变形，重则产生裂纹，零件报废。<br>

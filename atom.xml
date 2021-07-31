@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yingyouyu.github.io</id>
     <title>Sasuke的小窝</title>
-    <updated>2021-07-31T13:43:21.636Z</updated>
+    <updated>2021-07-31T13:45:10.070Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yingyouyu.github.io"/>
     <link rel="self" href="https://yingyouyu.github.io/atom.xml"/>
@@ -298,7 +298,7 @@ int main(){
 </code></pre>
 <h1 id="2分析">2.分析</h1>
 <p>本题是一道大水题，05年pj第一题（应该，毕竟这么水）<br>
-靠的就是小学的植树问题，当然还有初中的数轴（doge，毕竟题目里有说）<br>
+考的就是小学的植树问题，当然还有初中的数轴（doge，毕竟题目里有说）<br>
 如果把本题的马路看成数轴的话，0坐标就是原点，正方向是已经确定的<br>
 然后计算共计多少棵树（其实这里作者吃瘪一次）<br>
 然后划分区间，把这些树移走，如果已经移走，就不做处理（难道你tm要挖到软流层？）<br>
